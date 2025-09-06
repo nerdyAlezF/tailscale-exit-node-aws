@@ -32,7 +32,7 @@ cd tailscale-exit-aws
 ### 2. Configure variables
 Create a `terraform.tfvars` file and keep it **local only**:
 ```hcl
-region            = "ap-northeast-1"      # AWS region (e.g. Tokyo)
+regions           = ["ap-northeast-1", "us-east-1", "eu-central-1"]      # AWS regions (e.g. Tokyo)
 key_name          = "your-aws-keypair"    # Existing AWS key pair name
 tailscale_authkey = "tskey-auth-xxxxxxxx" # Tailscale reusable auth key
 ```
